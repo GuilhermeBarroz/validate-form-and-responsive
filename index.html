@@ -31,23 +31,23 @@
                 <div class="input-group">
                     <div class="inputs">
                         <label for="name"></label>
-                        <input type="text" name="name" id="iname" placeholder="Digite seu nome">
-                        <span>First Name cannot be empty</span>
+                        <input type="text" name="name" id="iname" placeholder="Digite seu nome" autocomplete="off" class="required" oninput="nameValidate()">
+                        <span class="spans">Name must be at least 3 characters</span>
                     </div>
                     <div class="inputs">
                         <label for="lastname"></label>
-                        <input type="text" name="lastname" id="ilastname" placeholder="Digite seu sobrenome">
-                        <span>Laste Name cannot be empty</span>
+                        <input type="text" name="lastname" id="ilastname" placeholder="Digite seu sobrenome" autocomplete="off" class="required"  oninput="lastNameValidate()">
+                        <span class="spans">Lastename must be at least 3 characters</span>
                     </div>
                     <div class="inputs">
                         <label for="email"></label>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu email">
-                        <span>Look like this is not an email</span>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu email" autocomplete="off" class="required"  oninput="emaliValidate()">
+                        <span class="spans">Look like this is not an email</span>
                     </div>
                     <div class="inputs">
                         <label for="password"></label>
-                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha">
-                        <span>Password cannot be empty</span>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" autocomplete="off" class="required"  oninput="passwordValidate()">
+                        <span class="spans">Password must be at least 6 characters</span>
                     </div>
                     <div class="button">
                         <input type="submit" value="Claim your free trial">

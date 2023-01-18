@@ -91,6 +91,7 @@ input{
     border: 1px solid rgba(0, 0, 0, 0.089);
     width: 25vw;
     height: 3rem;
+    outline: none;
 }
 
 .button{
@@ -109,6 +110,7 @@ input[type="submit"]{
     color: white;
     border: none;  
     box-shadow: 0px 2px hsla(154, 69%, 35%, 0.678); 
+    cursor: pointer;
 }
 
 input::placeholder{
@@ -117,6 +119,9 @@ input::placeholder{
 
 span{
     display: none;
+    color: red;
+    font-size: 10px;
+    text-align: right;
 }
 
 .terms{
